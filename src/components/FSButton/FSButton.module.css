@@ -1,0 +1,146 @@
+/* Button css start */
+.FSButton {
+  font-size: var(--font-size-heading4);
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 10rem;
+  text-transform: capitalize;
+  padding: 10px 24px;
+  min-width: 192px;
+  width: 100%;
+  height: 48px;
+}
+
+.FSButton:not(.FSButtonCancel) {
+  background: var(--color-purple);
+  color: var(--color-white);
+  border: 1px solid var(--color-purple);
+}
+
+.FSButtonCancel {
+  color: var(--color-purple);
+  text-decoration: underline;
+}
+
+.FSButtonCancel:not(:disabled):not(.ant-btn-disabled):hover {
+  color: var(--color-black);
+}
+
+.isExtraSmall {
+  height: 40px;
+}
+
+.isSmall {
+  height: 48px;
+}
+
+.isLarge {
+  height: 56px;
+}
+
+.FSButton:global.ant-btn.ant-btn-default:hover {
+  border-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.FSButtonTable {
+  font-size: var(--font-size-heading5);
+  height: 32px;
+  background: var(--color-white);
+}
+
+.FSButtonError:global.ant-btn.ant-btn-default,
+.FSButtonError:global.ant-btn.ant-btn-default:hover {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.FSButtonDanger:global.ant-btn.ant-btn-default,
+.FSButtonDanger:global.ant-btn.ant-btn-default:hover {
+  color: var(--color-white);
+  border-color: var(--color-error);
+  background-color: var(--color-error);
+}
+
+.FSButtonSuccess:global.ant-btn.ant-btn-default,
+.FSButtonSuccess:global.ant-btn.ant-btn-default:hover {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.FSButtonBordered:global.ant-btn.ant-btn-default,
+.FSButtonBordered:global.ant-btn.ant-btn-default:hover {
+  background: var(--color-white);
+  color: var(--color-purple);
+  border-width: 2px;
+}
+
+.FSButtonIcon:global.ant-btn .ant-btn-icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.FSButtonIcon :global .ant-btn-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Button css end */
+
+/* _START >> (BUTTON) HOVER SHINE EFFECT  << SHB */
+.isHoverShineLight,
+.isHoverShineDark {
+  --shine-line-left-position: -75px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 999ms cubic-bezier(0.35, 1, 0.22, 1);
+  -o-transition: all 999ms cubic-bezier(0.35, 1, 0.22, 1);
+  transition: all 999ms cubic-bezier(0.35, 1, 0.22, 1);
+}
+
+.isHoverShineLight:after {
+  background: var(--color-white);
+  opacity: 0.25;
+}
+
+.isHoverShineDark:after {
+  background: var(--color-black);
+  opacity: 0.075;
+}
+
+.isHoverShineLight:after,
+.isHoverShineDark:after {
+  z-index: 0;
+  content: "";
+  width: 50px;
+  height: 155px;
+  position: absolute;
+  left: var(--shine-line-left-position);
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.isHoverShineLight:hover:after,
+.isHoverShineDark:hover:after {
+  left: 120%;
+  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* DISABLE HOVER STYLE WHEN BUTTON IS DISABLED */
+.isHoverShineLight:disabled:hover:after,
+.isHoverShineDark:disabled:hover:after {
+  left: var(--shine-line-left-position);
+  transition: unset;
+}
+
+/* _CLOSE >> (BUTTON) HOVER SHINE EFFECT  << SHB */

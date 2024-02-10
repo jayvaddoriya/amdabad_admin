@@ -1,0 +1,51 @@
+.FSTabs:global.ant-tabs-top > .ant-tabs-nav::before {
+  display: none;
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-ink-bar {
+  background-color: var(--color-white);
+  height: calc(100% - 8px);
+  border-radius: 24px;
+  bottom: 4px;
+  z-index: -1;
+}
+
+.FSTabs :global .ant-tabs-nav-list {
+  background-color: var(--color-gray-tint-100);
+  border-radius: 40px;
+  padding: 4px;
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-tab {
+  padding: 10px 16px;
+  border-radius: 24px;
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 24px;
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-tab-btn {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: 1.25;
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-tab-btn:hover {
+  color: var(--color-purple);
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--color-purple);
+  text-shadow: none;
+}
+
+.FSTabs:global.ant-tabs-top > .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.FSTabs:global.ant-tabs .ant-tabs-tab-btn:focus-visible,
+.FSTabs:global.ant-tabs .ant-tabs-tab-remove:focus-visible {
+  outline: none;
+}

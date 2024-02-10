@@ -1,0 +1,50 @@
+.FSDashboardStatisticCardBar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.FSDashboardIconWrapper {
+  width: 56px;
+  height: 56px;
+  color: var(--color-white);
+}
+
+.FSDashboardIconWrapper svg {
+  width: 42%;
+  height: 42%;
+}
+
+@media (max-width:1799px) {
+  .FSDashboardStatisticCardBar {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width:1599px) {
+  .FSDashboardIconWrapper {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width:1365px) {
+  .FSDashboardStatisticCardBar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:575px) {
+  .FSDashboardIconWrapper {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width:480px) {
+  .FSDashboardStatisticCardBar {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+  }
+}

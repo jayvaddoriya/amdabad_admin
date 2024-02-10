@@ -1,0 +1,65 @@
+.fa-auth-container {
+  padding: 0 20px;
+}
+
+.fs-auth-header {
+  text-align: center;
+  margin: 120px 0 70px 0;
+}
+
+.fs-auth-header h1 {
+  margin-bottom: 0;
+}
+
+.fs-auth-header p,
+.fs-auth-card-header p {
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 400;
+}
+
+.fs-auth-card {
+  background-color: var(--color-gray-tint-100);
+  border-radius: 24px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fs-auth-card-header {
+  margin-bottom: 40px;
+}
+
+
+
+.fs-link-forgot-password {
+  display: block;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: underline;
+  transition: all .35s;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -ms-transition: all .35s;
+  -o-transition: all .35s;
+}
+
+.fs-link-forgot-password:hover {
+  transition: all .35s;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -ms-transition: all .35s;
+  -o-transition: all .35s;
+  text-decoration-line: none;
+  -moz-text-decoration-line: none;
+}
+
+.password-icon .anticon{
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}

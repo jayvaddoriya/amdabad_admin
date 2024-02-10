@@ -1,0 +1,147 @@
+/* product name data css start */
+.fsProductData {
+  display: flex;
+  align-items: center;
+}
+
+.fsProductImage {
+  max-width: 48px;
+  height: 48px;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.fsProductImage img {
+  border-radius: 50rem;
+}
+
+.fsProductText {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.fsProductName {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-black);
+  white-space: pre-line;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fsProDate {
+  font-size: 12px;
+  color: var(--color-gray);
+}
+
+/* product name data css end */
+
+.fsTableActionButtons {
+  /* display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-gap: 16px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fsActionButtonItem,
+.fsActionButtonIcon {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 24px;
+  text-transform: capitalize;
+}
+
+.fsActionButtonItem {
+  padding: 6px 16px;
+}
+
+.fsRejectButton,
+.fsRejectButton:hover {
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+
+.fsApproveButton,
+.fsApproveButton:hover {
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+
+.fsPreviewButton,
+.fsPreviewButton:hover {
+  color: var(--color-gray);
+}
+
+.fsTrashButton,
+.fsTrashButton:hover {
+  color: var(--color-error);
+}
+/* fs-table-wrapper css */
+.fsTableWrapper :global .ant-table-pagination.ant-pagination {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>th,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>td {
+  color: var(--color-gray);
+  font-weight: 400;
+  background: transparent;
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>th:first-child,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>td:first-child,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>th:first-child,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>td:first-child,
+.fsTableWrapper :global .ant-table-wrapper tfoot>tr>th:first-child,
+.fsTableWrapper :global .ant-table-wrapper tfoot>tr>td:first-child {
+  padding-left: 0;
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>th:last-child,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>td:last-child,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>th:last-child,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>td:last-child,
+.fsTableWrapper :global .ant-table-wrapper tfoot>tr>th:last-child,
+.fsTableWrapper :global .ant-table-wrapper tfoot>tr>td:last-child {
+  padding-right: 0;
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none;
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>th,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead>tr>td {
+  border: none;
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>th,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>td {
+  border-bottom-color: var(--color-border);
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-filter-trigger {
+  color: var(--color-border);
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-filter-trigger.active {
+  color: var(--color-purple);
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover {
+  background: var(--color-white);
+}
+
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr.ant-table-row:hover>th,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr.ant-table-row:hover>td,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>th.ant-table-cell-row-hover,
+.fsTableWrapper :global .ant-table-wrapper .ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: var(--color-white);
+}

@@ -1,0 +1,13 @@
+.ReadMoreLess,
+.ReadMoreLessText {
+  font-size: inherit;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.ReadMoreLess {
+  color: var(--color-purple);
+  cursor: pointer;
+}
+.ReadMoreLessText {
+  color: var(--color-black);
+}

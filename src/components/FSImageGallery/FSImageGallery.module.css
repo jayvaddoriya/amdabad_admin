@@ -1,0 +1,68 @@
+.gallerySwipperWrap :global .swiper-slide{
+  background-color: rgb(var(--color-blue-sky-RGB), 1);
+}
+.productSliderBigBanner :global .swiper-slide
+{
+  border-radius: 32px;
+}
+.productSliderSmallBanner :global .swiper-slide{
+  border-radius: 16px;
+}
+.productSliderSmallBanner :global .swiper-slide img{
+  border: 2px solid transparent;
+}
+.productSliderSmallBanner :global .swiper-slide-thumb-active img{
+  border-color: var(--color-black);
+  object-fit: cover;
+}
+:global .swiper-slide .ant-image{
+  border-radius: inherit;
+  width: 100%;
+}
+.borderRadiusInherit{
+  border-radius: inherit;
+}
+.productSliderSmallBanner :global .swiper-button-prev{
+  left: 0;
+}
+.productSliderSmallBanner :global .swiper-button-next{
+  right: 0;
+}
+.productSliderSmallBanner :global .swiper-button-prev,.productSliderSmallBanner :global .swiper-button-next,
+.productSliderSmallBanner :global .swiperButton{
+  width: 32px;
+  height: 32px;
+  background-color: #B4B4B5;
+  margin-top: 0;
+  border-radius: 100%;
+  transform: translateY(-50%);
+}
+.productSliderSmallBanner :global .swiper-button-prev:after,.productSliderSmallBanner :global .swiper-button-next:after{
+  font-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+.productSliderSmallBanner :global .swiper-button-disabled{
+  opacity: 0;
+}
+/* responsive css start */
+@media (max-width: 991px){
+  .productSliderBigBanner :global .swiper-slide{
+    border-radius: 22px;
+  }
+  .productSliderSmallBanner :global .swiper-slide{
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px){
+  .productSliderBigBanner :global .swiper-slide{
+    border-radius: 12px;
+  }
+  .productSliderSmallBanner :global .swiper-slide{
+    border-radius: 8px;
+  }
+}
+/* responsive css end */

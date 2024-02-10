@@ -1,0 +1,86 @@
+/* _START >> ROOT STYLE GLOBAL VARIABLES << SHB */
+:root {
+  /* FONT FAMILY & UTILITIES */
+  --font-family-sora: 'Sora', sans-serif;
+
+  --font-size-heading1: 30px;
+  --font-size-heading2: 24px;
+  --font-size-heading3: 20px;
+  --font-size-heading4: 16px;
+  --font-size-heading5: 14px;
+  --font-size-heading6: 12px;
+  --font-weight-headings: 500 !important;
+  --font-line-height-headings: 125%;
+
+  --body-font-size: 16px;
+  --body-line-height: 1.25;
+  --body-font-weight: 400;
+  --body-font-family: var(--font-family-sora);
+  --body-text-color: var(--color-black);
+  --body-back-color: var(--color-white);
+
+  --header-height: 80px;
+  --sidebar-width: 376px;
+
+  /* COLORS */
+  --color-black: #17171A;
+  --color-black-RGB: 23 23 26;
+  --color-white: #FFFFFF;
+  --color-white-RGB: 255 255 255;
+  --color-purple: #524EB7;
+  --color-purple-RGB: 82 78 183;
+  --color-red: #F44849;
+  --color-red-RGB: 244 72 73;
+  --color-yellow: #ECA727;
+  --color-yellow-RGB: 236 167 39;
+  --color-blue: #386CE8;
+  --color-blue-RGB: 56 108 232;
+  --color-blue-sky: #1C96F1;
+  --color-blue-sky-RGB: 28 150 241;
+  --color-gray: #767580;
+  --color-gray-RGB: 118 117 128;
+  --color-gray-tint-100: #F5F5FA;
+  --color-gray-tint-100-RGB: 245 245 250;
+
+  --color-success: #3F9E4C;
+  --color-success-RGB: 63 158 76;
+  --color-error: #B74E4E;
+  --color-error-RGB: 183 78 78;
+  --color-border: #E1E1E5;
+  --color-border-RGB: 225 225 229;
+
+  /* GRADIENT COLORS */
+  /* --gradient-prime: linear-gradient(180deg, #fed70f 0%, #e95f32 100%); */
+
+  /* LINK COLORS */
+  --link-usual-color: var(--color-purple);
+  --link-hover-color: var(--color-yellow);
+
+  /* PLACEHOLDER */
+  --placeholder-inactive-color: rgb(var(--color-gray-RGB) / 50%);
+  --placeholder-focused-color: var(--color-gray);
+
+  /* TEXT SELECTIONS */
+  --select-text-color: var(--color-white);
+  --select-back-color: var(--color-purple);
+
+
+  /* CUSTOM SCROLLBAR */
+  --scrollbar-width: 6px;
+  --scrollbar-height: 6px;
+  --scrollbar-radius: 10px;
+  --scrollbar-track-color: transparent;
+  --scrollbar-thumb-color: var(--color-purple);
+  --scrollbar-thumb-hover: rgb(var(--color-purple-RGB) / 80%);
+
+  --modal-width-xs: 400px;
+  --modal-width-sm: 600px;
+  --modal-width-md: 800px;
+  --modal-width-lg: 1000px;
+  --modal-width-xl: 1200px;
+
+  --fs-sidebar-padding: 32px;
+  --fs-sidebar-nav-padding: 24px;
+}
+
+/* _ENDS >> ROOT STYLE GLOBAL VARIABLES << SHB */

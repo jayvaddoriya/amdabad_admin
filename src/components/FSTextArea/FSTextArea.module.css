@@ -1,0 +1,32 @@
+.FSTextArea:global.ant-input {
+  resize: none;
+  background-color: var(--color-gray-tint-100);
+  border: 1px solid var(--color-gray-tint-100);
+  border-radius: 16px;
+  padding: 16px 24px;
+  font-size: var(--font-size-heading4);
+  font-weight: 400;
+  color: #a1adb2;
+  min-height: 120px;
+}
+
+.FSTextArea.large:global.ant-input {
+  height: 160px;
+}
+
+.FSTextArea:focus-visible {
+  outline: none;
+}
+
+.FSTextArea:global.ant-input:focus,
+.FSTextArea:global.ant-input-focused {
+  box-shadow: none;
+}
+
+.label{
+  font-size: var(--font-size-heading6);
+  font-weight: 400;
+  color: #737B7F;
+  margin-bottom: 8px;
+  display: inline-block;
+}

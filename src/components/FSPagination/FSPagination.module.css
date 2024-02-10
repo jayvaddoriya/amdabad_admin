@@ -1,0 +1,123 @@
+.FSPagination:global.ant-table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.FSPagination :global .ant-pagination {
+  display: flex;
+}
+
+.FSPagination :global .ant-pagination-options {
+  order: -1;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.FSPagination :global .ant-pagination-options::after {
+  content: 'Show entries';
+  margin-left: 6px;
+}
+
+.FSPagination :global .ant-pagination-prev,
+.FSPagination :global .ant-pagination-next,
+.FSPagination :global .ant-select-selector {
+  border: 1px solid var(--color-border);
+  min-height: 40px;
+  min-width: max-content;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: none !important;
+}
+
+.FSPagination :global .ant-pagination-prev.ant-pagination-disabled a,
+.FSPagination :global .ant-pagination-next.ant-pagination-disabled a {
+  cursor: not-allowed;
+}
+
+.FSPagination :global .ant-select .ant-select-selector,
+.FSPagination :global .ant-select:hover .ant-select-selector {
+  border: none;
+  background-color: #F5F5FA;
+  box-shadow: none;
+  min-width: 68px;
+}
+
+.FSPagination :global .ant-select-selector .ant-select-selection-item,
+.FSPagination :global .ant-select-arrow {
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.FSPagination :global  .ant-select-arrow {
+  background-image: url("data:image/svg+xml, %3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99996 3.78089L8.29983 0.481079L9.24263 1.42389L4.99996 5.66656L0.757324 1.42389L1.70014 0.481079L4.99996 3.78089Z' fill='currentColor' /%3E%3C/svg%3E");
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  background-size: contain;
+}
+
+.FSPagination :global .ant-select-arrow svg {
+  display: none;
+}
+
+.FSDirectionArrows {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  display: flex;
+}
+
+.FSDirectionArrows svg {
+  width: 100%;
+  height: 100%;
+}
+
+.FSPreviousArrow {
+  margin-right: 4px;
+}
+
+.FSNextArrow {
+  margin-left: 4px;
+}
+
+.FSPagination :global .ant-pagination-item,
+.FSPagination :global .ant-pagination-jump-next-custom-icon,
+.FSPagination :global .ant-pagination-jump-prev-custom-icon {
+  border: 1px solid var(--color-border);
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FSPagination :global .ant-pagination-item a {
+  color: var(--color-black);
+}
+
+.FSPagination :global .ant-pagination-item-active {
+  border-color: var(--color-purple);
+}
+
+.FSPagination :global .ant-pagination-item-link {
+  min-width: 40px;
+}
+
+.FSPagination :global .ant-pagination-item-active a,
+.FSPagination :global .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon,
+.FSPagination :global .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+  color: var(--color-purple);
+}
+
+.FSPagination :global .ant-pagination-item:not(.ant-pagination-item-active):hover {
+  background-color: var(--color-white);
+}

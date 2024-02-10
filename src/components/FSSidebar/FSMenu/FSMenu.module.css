@@ -1,0 +1,61 @@
+.FSSidebarNavIcon {
+  width: 20px;
+  height: 20px;
+}
+
+
+.FSSidebarMenu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.FSSidebarMenuItem {
+  width: 100%;
+}
+
+.FSSidebarMenuLink {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px var(--fs-sidebar-nav-padding);
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  color: var(--color-gray);
+  background-color: transparent;
+  transition: all .35s;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -ms-transition: all .35s;
+  -o-transition: all .35s;
+}
+
+.FSSidebarMenuLink:hover {
+  color: var(--color-purple);
+}
+.FSSidebarMenuLink:global.active,
+.FSSidebarMenuLink:global.active:hover {
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  transition: all .35s;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+
+@media (max-width: 1365px) {
+  .FSSidebarMenuLink {
+    gap: 12px;
+  }
+}

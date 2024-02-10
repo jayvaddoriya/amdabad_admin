@@ -1,0 +1,76 @@
+
+
+/* antd table sorting css start */
+.fs-table-wrapper .ant-table-wrapper .ant-table-column-sorter {
+  color: var(--color-border);
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-column-sorters:hover .ant-table-column-sorter {
+  color: var(--color-gray);
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-column-sorter-up.active,
+.fs-table-wrapper .ant-table-wrapper .ant-table-column-sorter-down.active {
+  color: var(--color-purple);
+}
+
+/* antd table sorting css end */
+
+/* antd table filters css start */
+.fs-table-wrapper .ant-table-wrapper .ant-table-filter-trigger:hover {
+  color: var(--color-gray);
+  background: var(--color-white);
+}
+
+.ant-table-filter-dropdown .ant-btn.ant-btn-primary.ant-btn-sm {
+  color: var(--color-white);
+  background: var(--color-purple);
+  border-radius: 20px;
+  font-size: 12px;
+  min-height: 32px;
+  padding: 0 12px;
+}
+
+.ant-table-filter-dropdown .ant-btn.ant-btn-link.ant-btn-sm {
+  color: var(--color-purple);
+}
+
+.ant-table-filter-dropdown .ant-checkbox-checked .ant-checkbox-inner,
+.ant-table-filter-dropdown .ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-table-filter-dropdown .ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+/* antd table filters css end */
+
+/* antd switch css start */
+.fs-switch.ant-switch {
+  height: 24px;
+  min-width: 40px;
+  background: var(--color-border);
+}
+
+.fs-switch.ant-switch .ant-switch-handle {
+  width: 20px;
+  height: 20px;
+}
+
+.fs-switch.ant-switch.ant-switch-checked .ant-switch-handle {
+  inset-inline-start: calc(100% - 22px);
+}
+
+.fs-switch.ant-switch.ant-switch-checked,
+.fs-switch.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: var(--color-purple);
+}
+
+.fs-switch.ant-switch:hover:not(.ant-switch-disabled) {
+  background: var(--color-border);
+}
+
+.fs-switch.ant-switch .ant-switch-handle::before {
+  box-shadow: none;
+}
+
+/* antd switch css end */

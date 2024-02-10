@@ -1,0 +1,93 @@
+.editorWrap {
+  background-color: var(--color-white);
+  border: 2px solid #e3e5e5;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.toolbarWrap {
+  padding: 8px 24px;
+  background-color: #f5f8fa;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: unset;
+  margin-bottom: 0;
+}
+
+.toolbarWrap :global .rdw-inline-wrapper,
+.toolbarWrap :global .rdw-text-align-wrapper,
+.toolbarWrap :global .rdw-list-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  margin-bottom: 0;
+}
+
+.toolbarWrap > div:not(:last-child) {
+  position: relative;
+  padding-right: 24px;
+}
+
+.toolbarWrap > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #e3e5e5;
+  top: 0;
+  right: 12px;
+}
+
+.toolbarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border-radius: unset;
+  min-width: unset;
+  background-color: transparent;
+  border: none;
+}
+
+.toolbarBtn:hover,
+.toolbarBtn:active {
+  box-shadow: none;
+}
+
+.toolbarBtn:global.rdw-option-active {
+  box-shadow: none;
+}
+
+.toolbarBtn:not(:last-child) {
+  margin-right: 16px;
+}
+
+.toolbarBtn img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+
+.textWrap {
+  padding: 14px 24px;
+  font-size: var(--font-size-heading4);
+  font-weight: 400;
+  color: #a1adb2;
+}
+
+.textWrap :global .public-DraftStyleDefault-block {
+  margin: 0;
+}
+
+.label{
+  font-size: var(--font-size-heading6);
+  font-weight: 400;
+  color: #737B7F;
+  margin-bottom: 8px;
+  display: inline-block;
+}

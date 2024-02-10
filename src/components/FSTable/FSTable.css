@@ -1,0 +1,177 @@
+/* product name data css start */
+.fs-product-data {
+  display: flex;
+  align-items: center;
+}
+
+.fs-product-image {
+  max-width: 48px;
+  height: 48px;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.fs-product-image img {
+  border-radius: 50rem;
+}
+
+.fs-product-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.fs-product-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-black);
+  white-space: pre-line;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fs-pro-date {
+  font-size: 12px;
+  color: var(--color-gray);
+}
+
+/* product name data css end */
+
+.fs-table-action-buttons {
+  /* display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-gap: 16px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fs-action-button-item,
+.fs-action-button-icon {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 24px;
+  text-transform: capitalize;
+}
+
+.fs-action-button-item {
+  padding: 6px 16px;
+}
+
+.fs-reject-button,
+.fs-reject-button:hover {
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+
+.fs-approve-button,
+.fs-approve-button:hover {
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+
+.fs-preview-button,
+.fs-preview-button:hover {
+  color: var(--color-gray);
+}
+
+.fs-trash-button,
+.fs-trash-button:hover {
+  color: var(--color-error);
+}
+
+.fs-status-text-item {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.fs-reject-text {
+  color: var(--color-error);
+}
+
+.fs-approve-text {
+  color: var(--color-success);
+}
+
+.fs-status-text-item::before {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50rem;
+  margin-right: 8px;
+}
+
+.fs-status-text-item.fs-reject-text::before {
+  background-color: var(--color-error);
+}
+
+.fs-status-text-item.fs-approve-text::before {
+  background-color: var(--color-success);
+}
+/* fs-table-wrapper */
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>th,
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>td {
+  color: var(--color-gray);
+  font-weight: 400;
+  background: transparent;
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>th:first-child,
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>td:first-child,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>th:first-child,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>td:first-child,
+.fs-table-wrapper .ant-table-wrapper tfoot>tr>th:first-child,
+.fs-table-wrapper .ant-table-wrapper tfoot>tr>td:first-child {
+  padding-left: 0;
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>th:last-child,
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>td:last-child,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>th:last-child,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>td:last-child,
+.fs-table-wrapper .ant-table-wrapper tfoot>tr>th:last-child,
+.fs-table-wrapper .ant-table-wrapper tfoot>tr>td:last-child {
+  padding-right: 0;
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none;
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>th,
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead>tr>td {
+  border: none;
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>th,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>td {
+  border-bottom-color: var(--color-border);
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-filter-trigger {
+  color: var(--color-border);
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-filter-trigger.active {
+  color: var(--color-purple);
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover {
+  background: var(--color-white);
+}
+
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr.ant-table-row:hover>th,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr.ant-table-row:hover>td,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>th.ant-table-cell-row-hover,
+.fs-table-wrapper .ant-table-wrapper .ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: var(--color-white);
+}
